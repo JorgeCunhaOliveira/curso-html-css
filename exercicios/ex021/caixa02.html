@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        nav{
+            background-color: gray;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        section{
+            background-color:lightgray ;
+            padding: 5px;
+            flex: 2;
+            margin-right: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.486);
+        }
+        article > aside{
+            background-color: gray;
+            text-align: right;
+        }
+        .periferico{
+            background-color: lightslategray;
+            color: white;
+            flex: 1;
+            margin-left: 5px;
+            padding: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+       .paragrafo{
+        text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section class="assuntos">
+            <article>
+                <h2>Subtítulo</h2>
+                <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nihil quia quisquam libero dolores animi repudiandae in facilis cum molestiae excepturi, aperiam tenetur, impedit illo quos pariatur distinctio velit porro.</p>
+            </article>
+        
+        
+            <article>
+                <h2>Subtítulo</h2>
+                <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, deleniti. Eos consequuntur, quas eveniet aliquid, ut beatae et ullam, accusantium unde vel quos alias modi cupiditate totam omnis architecto ipsum!</p>
+                <aside>
+                    Escrito por Jorge Luiz Cunha
+                </aside>
+            </article>
+        </section>
+
+        
+            
+        
+        <aside class="periferico">
+            Conteúdo periférico do site
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoEmVídeo</p>
+    </footer>
+</body>
+</html>

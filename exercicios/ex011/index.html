@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"><!--Uso o source=midia type para esta funcionalidade.--> 
+
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--tenho que colocar a largura em max e definir um tamanho máximo e aqui é 1050px. Além disso coloco a imagem que quero carregar quando a tela diminuir-->
+
+        <img src="imagens/foto-g.png" alt="Imagem flexível"><!--Aqui é a imagem  maior-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+    <audio src="midia/upsettertheminivandals.mp3" controls ></audio> <!--Formatos compatíveis MP3 WAV OGG-->
+
+    <p>Outro forma de reproduzir áudio</p>
+    <audio  controls preload="metadata"><!--preload irá carregar algumas informações, mas não baixar o arquivo.-->
+        <source src="midia/upsettertheminivandals.mp3" type="audio/mpeg"><!--Tenho que colocar o tipo (type) e são esses. Outro coisa importante é a ordem, o navegador vai tentar um por vez. Obs.:devo evitar arquivos em WAV, pois são pesados demais-->
+        <source src="midia/upsettertheminivandals.ogg" type="audio/ogg">
+        <source src="midia/upsettertheminivandals.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/upsettertheminivandals.mp3"> Clique aqui para baixar o arquivo em MP3 </a></p>
+    </audio>
+</body>
+</html>
