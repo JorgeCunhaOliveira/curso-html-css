@@ -2,3 +2,5 @@
  Curso de HTMl e CSS
 
 Eu estou aprendendo a criar sites e a gerenciar meus repositórios.
+
+<a href="https://jorgecunhaoliveira.github.io/curso-html-css/exercicios/ex001/index.html"> Executar o exercício 001</a>
