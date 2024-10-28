@@ -107,7 +107,7 @@ footer{
 }
 p.rodape {
     color: black;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     display: inline;
     padding: 0px 10px 0px 10px ;
     
@@ -117,8 +117,8 @@ footer > div{
     
 }
 .ico{
-    width: 4%;
+    width: 3%;
 }
 .logo{
-    width: 4%;  
+    width: 3%;  
 }
