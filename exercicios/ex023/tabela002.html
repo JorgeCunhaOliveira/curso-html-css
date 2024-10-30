@@ -11,19 +11,25 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         th, td{
             border: 1px solid black;
             padding: 8px;
         }
         thead, tfoot{
-            background-color: rgba(128, 128, 128, 0.555);
+            background-color: gray;
             color: white;
+        }
+        thead > tr > th{ /* Fixar o cabeçalho da tabela*/
+            position: sticky;
+            top: -1px;
+            background-color:gray ;
         }
         .num{
             text-align: right;
         }
-        caption{
+        caption{ /* Título acima do cabeçalho*/
             background-color: lightgray;
             padding: 10px;
             font-size: 1.3em;
