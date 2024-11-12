@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <fieldset>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="iano">Qual ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="iidade.innerHTML = Number(2024 - iano.value)">
+            </p>
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <output id="iidade">0</output> anos
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <form action="cadastro.php" method="get">
+            
+            <p>
+                <label for="iano">Qual ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024"  oninput="iidade.innerHTML = Number(new Date().getFullYear() - Number(iano.value))">
+            </p>
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <output id="iidade"></output> 
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+       </fieldset> 
+   
+</body>
+    
+    
+</html>
