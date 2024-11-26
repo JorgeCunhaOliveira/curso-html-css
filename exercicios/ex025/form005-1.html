@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Treinando formulários</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="masc" checked> <label for="masc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes</legend>
+
+            <input type="checkbox" name="fut" id="ifut"> 
+            <label for="ifut">Futebol</label><br>
+
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">Natação</label><br>
+
+            <input type="checkbox" name="bas" id="ibas">
+            <label for="ibas">Basquete</label><br>
+
+            <input type="checkbox" name="f01" id="if01">
+            <label for="if01">Formula 01</label><br>
+
+            <input type="checkbox" name="vol" id="ivol">
+            <label for="ivol">Vôlei</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado Civil</legend>
+
+            <input type="radio" name="civil" id="sol" checked>
+            <label for="sol">Solteiro</label><br>
+
+            <input type="radio" name="civil" id="cas">
+            <label for="cas">Casado</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gosto musical</legend>
+
+            <input type="checkbox" name="roc" id="iroc">
+            <label for="iroc">Rock</label><br>
+
+            <input type="checkbox" name="fun" id="ifun">
+            <label for="ifun">Funk</label><br>
+
+            <input type="checkbox" name="sam" id="isam">
+            <label for="isam">Samba</label><br>
+
+            <input type="checkbox" name="pag" id="ipag">
+            <label for="ipag">Pagode</label><br>
+
+            <input type="checkbox" name="pop" id="ipop">
+            <label for="ipop">Pop</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
