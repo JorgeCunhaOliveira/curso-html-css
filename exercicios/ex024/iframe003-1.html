@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de iframe</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.1em;
+        }
+        p{
+            text-indent: 30px;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        .iframe{
+            display: block;
+            margin: auto;
+            width: 40vw;
+        }
+        menu > ul{
+           list-style-type: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Escolha uma página</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a doloribus magni. Non a numquam accusamus labore ipsa. Eius nulla aliquid quisquam laborum sint maiores recusandae inventore voluptatem, ratione quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat aspernatur illum officia excepturi corporis vero quo nisi eius, alias et aperiam sapiente saepe praesentium autem eos! Laboriosam, delectus nihil.</p>
+    <menu>
+        <ul>
+            <li><a href="paginas-extras/pag001-1.html" target="frame">Página 01</a></li>
+            <li><a href="paginas-extras/pag002-1.html" target="frame">Página 02</a></li>
+            <li><a href="paginas-extras/pag003-1.html" target="frame">Página 03</a></li>
+        </ul>
+    </menu>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam atque et deleniti esse debitis pariatur harum nihil quisquam fugiat, dolores saepe consequuntur, nisi laudantium aut, ad distinctio animi impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam nesciunt corrupti neque voluptas natus cupiditate deserunt. Dolorum atque autem tenetur aliquid possimus omnis ipsum dolorem explicabo nulla, quis sequi.</p>
+    <iframe class="iframe" srcdoc="<h1> Escolha uma página </h1>" name="frame" height="200px"></iframe>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ab unde saepe omnis eos nemo nesciunt deleniti quo officiis, dolorum impedit aliquam a recusandae, magnam eligendi vitae suscipit ipsa. Nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptas, dignissimos maxime eius illum molestias pariatur, modi doloremque qui quibusdam officia, quisquam earum! Tempore obcaecati architecto vero sunt, quas ipsam.</p>
+</body>
+</html>
