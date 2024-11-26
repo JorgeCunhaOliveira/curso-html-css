@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+        .botao{
+            display: block;
+            margin: auto;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #90ee9085;
+            color: black;
+        }
+        .botao:hover{
+            background-color: #90ee90;
+        }
+        .limpar{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            background-color: #e0ffff;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+        .limpar:hover{
+            background-color: #a6f1f1;
+        }
+        div#saida{
+            color: red;
+            font-size: 1.1em;
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="botao" onclick="clicar()">Clique aqui!</p>
+    <p class="limpar" onclick="limpar()">Limpar</p>
+    <div id="saida"></div>
+
+    <script>
+    function clicar(){
+        s = window.document.getElementById('saida')
+        s.innerHTML += '<p> Você clicou </p>'
+    }
+
+    function limpar(){
+        s = window.document.getElementById('saida')
+        s.innerHTML = ""
+    }
+</script>
+</body>
+
+</html>
