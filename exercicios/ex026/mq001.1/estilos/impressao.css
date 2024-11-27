@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px;
+}
+menu{
+    display: none;
+}
+html{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-indent: 30px;
+}
+main{
+    width: 100%;
+}
+footer::after{
+    content: "Esse arquivo é adaptado para impressão";
+}
