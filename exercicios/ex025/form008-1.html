@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de formulários</title>
+</head>
+<body>
+    <h1>Treino de formulários</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Soma</legend>
+            <p>
+                <label for="inum1">Número 01:</label>
+                <input type="number" name="num1" id="inum1" min="0" max="100" oninput="ires.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="inum2">Número 02:</label>
+                <input type="number" name="num2" id="inum2" min="0" max="100" oninput="ires.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            
+                <label for="ires">Resultado: </label>
+                <output name="res" id="ires">0</output>
+            
+            
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
