@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de formulários</title>
+</head>
+<body>
+    <h1>Treino de formulários</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Nascimento</legend>
+            <label for="inas">Qual ano você nasceu?</label>
+            <input type="number" name="nas" id="inas" min="1900" max="2024" oninput="res.innerHTML = Number(2024 - inas.value)">
+
+            <p><label for="res">Sua idade é:</label>
+            <output id="res">0</output> anos</p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Nascimento 02</legend>
+
+            <p>
+                <label for="iano">Qual ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1914" max="2024" oninput="ires.innerHTML = Number(new Date().getFullYear()) - Number(iano.value)">
+            </p>
+
+            <p>
+                <label for="ires">Sua idade é:</label>
+                <output id="ires">0</output> anos
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+</form>
+</body>
+</html>
