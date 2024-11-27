@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+  /* cor azul = #3a33fb*/
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body, main{
+    background-color:#3a33fb ;
+}
+h1{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
