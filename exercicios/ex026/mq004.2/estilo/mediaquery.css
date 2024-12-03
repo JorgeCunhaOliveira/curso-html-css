@@ -1,3 +1,35 @@
 @charset "UTF-8";
 
-/*Demais telas*/
+/*Demais telas. 
+Aqui são mudanças pontuais, Relacionadas com cada tela.*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: url(../imagens/tela-jovem.jpg);
+        background-position: left ;
+    }
+    img#cri{display: none;}
+    img#jov{display: block;}
+    img#adu{display: none;}
+    img#ido{display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background-image: url(../imagens/tela-adulto.jpg);
+        background-position: left;
+    }
+    img#cri{display: none;}
+    img#jov{display: none;}
+    img#adu{display: block;}
+    img#ido{display: none;}
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagens/tela-idoso.jpg);
+    }
+    img#cri{display: none;}
+    img#jov{display: none;}
+    img#adu{display: none;}
+    img#ido{display: block;}
+}
