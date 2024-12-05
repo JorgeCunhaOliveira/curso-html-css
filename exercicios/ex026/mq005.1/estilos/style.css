@@ -11,7 +11,7 @@ body{
 header{
     background-color: lightseagreen;
     margin-bottom: 10px;
-    height: 100px;
+    
 }
 header > h1{
     color: white;
@@ -23,7 +23,29 @@ header > h1{
     padding: 5px;
     border-radius: 5px;
 }
+menu{
+    display: none;
+}
+span#men{
+    display: block;
+    text-align: center;
+    background-color: lightseagreen;
+    color: #188882;
+    margin-top: 29px;
+    cursor: pointer;
+}
+span#men:hover{
+    background-color: #18888257;
+    color: white;
+}
+menu > ul{
+    list-style-type: none;
+}
+menu li{
+    text-align: center;
+}
 menu > ul > li > a{
+    display: block;
     text-decoration: none;
     color: white;
     padding: 5px;
@@ -32,19 +54,13 @@ menu > ul > li > a{
 menu > ul > li > a:hover{
     background-color: #188882;
 }
-menu > ul > li{
-    list-style-type: none;
-    display: inline-block;
-    margin-top: 30px;
-}
+
 main{
     display: block;
     margin: auto;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
-    max-width: 768px;
-    min-width: 320px;
     width: 88vw;
 }
 main > h2{
@@ -55,6 +71,7 @@ main > p{
     text-indent: 30px;
     margin-bottom: 20px;
     line-height: 1.5em;
+    text-align: justify;
 }
 footer{
     background-color: lightseagreen;
