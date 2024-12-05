@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/tela-outono.jpg);
+        
+    }
+    img#ver{display: none;}
+    img#out{display: block;}
+    img#inv{display: none;}
+    img#pri{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/tela-inverno.jpg);
+        background-position: center center;
+    }
+    img#ver{display: none;}
+    img#out{display: none;}
+    img#inv{display: block;}
+    img#pri{display: none;}
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagens/tela-primavera.jpg);
+        background-position: left center;
+    }
+    img#ver{display: none;}
+    img#out{display: none;}
+    img#inv{display: none;}
+    img#pri{display: block;}
+}
